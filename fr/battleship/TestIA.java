@@ -30,8 +30,7 @@ public class TestIA {
 					
 				}
 				
-				System.out.println(" score IA 0 = "+scoreI1);
-				System.out.println(" score IA 1 = "+scoreI2+"\n");
+				
 				
 				
 				
@@ -57,10 +56,8 @@ public class TestIA {
 				
 				
 				
-				//System.out.println(game(I1,I2));
 				
-				System.out.println("score IA 1 = "+scoreI3);
-				System.out.println("score IA 2 = "+scoreI4+"\n");
+				
 				
 				
 				
@@ -86,9 +83,6 @@ public class TestIA {
 					k++;
 					
 				}
-				
-				System.out.println("score IA 0 = "+scoreI5);
-				System.out.println("score IA 2 = "+scoreI6+"\n");
 				
 				
 				try {
