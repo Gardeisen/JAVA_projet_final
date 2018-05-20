@@ -57,11 +57,6 @@ public class IAniveau2 extends IA {
 				
 			}	
 		}
-	//ici on regarde si la liste hits vide 
-		//si oui on tire au hasard coordinate() random
-		//sinon on get une des coordinate de la liste hits, on regarde si sont bateau a etait coulé 
-		//si oui coulé on choisit une autre coordonée faire plusiuer for
-		//sinon on tape à coté en s'assurant que il n'y a pas déja appartient à hit ou miss 
 		return c;
 	}
 

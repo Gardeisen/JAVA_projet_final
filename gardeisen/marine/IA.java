@@ -18,17 +18,12 @@ public class IA extends Player {
 			char xxx=(char)xx;
 			
 			double r = Math.random();
-			//System.out.println("le nombre random = "+r);
-			//System.out.println("la coordonée x de débit convertit en int + taille -1 = "+xx);
-			//System.out.println("la coordonnée qui serait celle en fin avec la lettre = "+xxx);
-			//System.out.println("la coordonnée de debut Y = "+start.getY());
-			//System.out.println("la taille= "+taille);
+			
 			
 			if((start.getY()+taille -1 <= 10) && r<0.50) {
 				
 					Coordinate end = new Coordinate(start.getX(),start.getY()+taille-1);
 					Ship s = new Ship(taille,start,end);
-					//System.out.println("je suis passé ici 1");
 					
 						
 						return s;			
@@ -38,7 +33,6 @@ public class IA extends Player {
 				
 					Coordinate end = new Coordinate(xxx,start.getY());
 					Ship s = new Ship(taille,start,end);
-					//System.out.println("je suis passé ici 2");
 					return s;
 					
 					
@@ -46,7 +40,6 @@ public class IA extends Player {
 					
 			else { 
 				start = new Coordinate();
-				//System.out.println("hop hop hop autre");
 				return this.randomboat(taille);
 			}
 			

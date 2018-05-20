@@ -8,7 +8,7 @@ public class TestIA {
 	public static void main(String[] args) {
 
 		
-		//la boucle pour 100 partie L0vsL1
+	
 				
 				int i=0;
 				int scoreI1=0;
@@ -30,10 +30,10 @@ public class TestIA {
 					
 				}
 				
-				System.out.println("le score de l'IA niveau 0 = "+scoreI1);
-				System.out.println("le score de l'IA niveau 1 = "+scoreI2+"\n");
+				System.out.println(" score IA 0 = "+scoreI1);
+				System.out.println(" score IA 1 = "+scoreI2+"\n");
 				
-				//la boucle pour 100 partie L0vsL1
+				
 				
 				int j=0;
 				int scoreI3=0;
@@ -59,8 +59,8 @@ public class TestIA {
 				
 				//System.out.println(game(I1,I2));
 				
-				System.out.println("le score de l'IA niveau 1 = "+scoreI3);
-				System.out.println("le score de l'IA niveau 2 = "+scoreI4+"\n");
+				System.out.println("score IA 1 = "+scoreI3);
+				System.out.println("score IA 2 = "+scoreI4+"\n");
 				
 				
 				
@@ -87,8 +87,8 @@ public class TestIA {
 					
 				}
 				
-				System.out.println("le score de l'IA niveau 0 = "+scoreI5);
-				System.out.println("le score de l'IA niveau 2 = "+scoreI6+"\n");
+				System.out.println("score IA 0 = "+scoreI5);
+				System.out.println("score IA 2 = "+scoreI6+"\n");
 				
 				
 				try {
@@ -107,7 +107,7 @@ public class TestIA {
 			
 			public static int game2(IA A1,IA A2) {
 				
-				//return 0 si A1 gagne 1 sinon 
+				//return 0 si A0 gagne 1 sinon 
 				
 				//initialisation les bateaux de A1
 				
@@ -169,8 +169,6 @@ public class TestIA {
 					}
 					
 				}
-				//System.out.println(A1.showMyGrille());
-				//System.out.println("taille listeCoord"+A1.getlistCoordShip().size());
 				
 				//initailisation bateau de l'IA2
 				
@@ -234,8 +232,6 @@ public class TestIA {
 					
 				}
 				
-				//System.out.println(A2.showMyGrille());
-				//System.out.println("la taille de la grille de IA2" + A2.getlistCoordShip().size());
 				
 				int winner=0; // si A1 gagne winner=1 si A2 gagne winner=2
 				

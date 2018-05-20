@@ -24,14 +24,14 @@ public class Coordinate {
 	
 	public Coordinate(char x, int y) {
 		if ((int)x>74 || (int)x< 65) { 
-			//System.out.println("coordinate not good, try other");
+			System.out.println("coordinate not good, try other");
 			}
 		else 
 		{
 			this.x=x; 
 		}
 		if (y>10 || y< 1) { 
-			//System.out.println("coordinate not good, try other"); 
+			System.out.println("coordinate not good, try other"); 
 			}
 		else {
 		this.y=y;}

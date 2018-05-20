@@ -16,7 +16,6 @@ public class Ship {
 			this.size = size;
 			this.nbtouch=0;
 			coordlist = new ArrayList<>(); // list of coordinates of ship
-			//placeShip();
 			// place boat
 				//horizontal
 				if (start.getY() == end.getY() && start.getX() != end.getX()) {

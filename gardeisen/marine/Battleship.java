@@ -5,7 +5,7 @@ import java.io.Console;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Main {
+public class Battleship {
 
 	public static void main(String[] args) {
 
@@ -85,7 +85,7 @@ public class Main {
 		// if the player want to play alone
 		if (typeofgame == 2) {
 
-			// System.out.println("initialisation de l'IA");
+			 System.out.println("initialisation de l'IA");
 			System.out.println(
 					"Choose the level that the boot will have : \n 0 = take it easy\n 1 = let's try \n 2 = show me your best opponent \n ");
 			
@@ -115,8 +115,6 @@ public class Main {
 					A1.addCoordinate(destroyerIA);
 					A1.addaShip(destroyerIA);
 					okIA = false;
-					// destroyerIA.showList();
-					// System.out.println("destroyer ok !");
 				}
 
 			}
@@ -130,7 +128,6 @@ public class Main {
 					okIA = false;
 					A1.addaShip(carrierIA);
 					A1.addCoordinate(carrierIA);
-					// System.out.println("carrier ok !");
 				}
 			}
 
@@ -144,7 +141,6 @@ public class Main {
 					A1.addaShip(submarineIA);
 					A1.addCoordinate(submarineIA);
 
-					// System.out.println("submarine ok !");
 				}
 			}
 
@@ -156,7 +152,6 @@ public class Main {
 					okIA = false;
 					A1.addaShip(cruiserIA);
 					A1.addCoordinate(cruiserIA);
-					// System.out.println("cruiser ok !");
 				}
 			}
 
@@ -168,11 +163,9 @@ public class Main {
 					okIA = false;
 					A1.addaShip(battleShipIA);
 					A1.addCoordinate(battleShipIA);
-					// System.out.println("battleship ok !");
 				}
 			}
 
-			//System.out.println(A1.showMyGrille());
 			System.out.println("\n\n\n\n\n\n\n\n\n\n");
 
 			// initialisation pour l'unique joueur
@@ -243,7 +236,6 @@ public class Main {
 
 					J.addCoordinate(car);
 					J.addaShip(car);// put in the list all the coordinate of the ship
-					// car.showList(); // show the list of coordinate that we just have use in the
 					// different
 					ok = false;
 					System.out.print(J.showMyGrille() + "\n\n");
@@ -306,8 +298,6 @@ public class Main {
 
 					J.addCoordinate(car);
 					J.addaShip(car);// put in the list all the coordinate of the ship
-					// car.showList(); // show the list of coordinate that we just have use in the
-					// different
 					ok = false;
 					System.out.print(J.showMyGrille() + "\n\n");
 
@@ -370,8 +360,6 @@ public class Main {
 
 					J.addCoordinate(car);
 					J.addaShip(car);// put in the list all the coordinate of the ship
-					// car.showList(); // show the list of coordinate that we just have use in the
-					// different
 					ok = false;
 					System.out.print(J.showMyGrille() + "\n\n");
 
@@ -433,8 +421,6 @@ public class Main {
 
 					J.addCoordinate(car);
 					J.addaShip(car);// put in the list all the coordinate of the ship
-					// car.showList(); // show the list of coordinate that we just have use in the
-					// different
 					ok = false;
 					System.out.print(J.showMyGrille() + "\n\n");
 
@@ -496,8 +482,6 @@ public class Main {
 
 					J.addCoordinate(car);
 					J.addaShip(car);// put in the list all the coordinate of the ship
-					// car.showList(); // show the list of coordinate that we just have use in the
-					// different
 					ok = false;
 					System.out.print(J.showMyGrille() + "\n\n");
 
@@ -533,12 +517,10 @@ public class Main {
 					Coordinate shot = new Coordinate(cbis, d);
 					System.out.println("shoot X = " + shot.getX() + " , Y= " + shot.getY());
 
-					// System.out.println("avant le if");
 					if (J.canHit(shot) == true && shot.validCo()) {
 						// shoot
 
 						for (Ship s : A1.getlistShip()) {
-							// System.out.println("la fonction aShipisHit" +s.getSize()+s.aShipisHit(shot));
 							if (s.aShipisHit(shot)) {
 								J.addCoordListHits(shot);
 								System.out.println("touched!\n");
@@ -586,7 +568,6 @@ public class Main {
 								if (s.aShipisHit(shot2)) {
 									A1.addCoordListHits(shot2);
 									System.out.println("touched !");
-									// System.out.println(A1.showMeMyShot());
 
 									if (s.destroyed()) {
 										System.out.println("you succely flow a ship!");
@@ -596,7 +577,6 @@ public class Main {
 							if (J.isHit(shot2) == false) {
 								A1.addCoordListMiss(shot2);
 								System.out.println("missed!");
-								// System.out.println(A1.showMeMyShot());
 
 							}
 
@@ -646,8 +626,6 @@ public class Main {
 					A1.addCoordinate(destroyerIA);
 					A1.addaShip(destroyerIA);
 					okIA = false;
-					// destroyerIA.showList();
-					// System.out.println("destroyer ok !");
 				}
 
 			}
@@ -661,7 +639,6 @@ public class Main {
 					okIA = false;
 					A1.addaShip(carrierIA);
 					A1.addCoordinate(carrierIA);
-					// System.out.println("carrier ok !");
 				}
 			}
 
@@ -675,7 +652,6 @@ public class Main {
 					A1.addaShip(submarineIA);
 					A1.addCoordinate(submarineIA);
 
-					// System.out.println("submarine ok !");
 				}
 			}
 
@@ -687,7 +663,6 @@ public class Main {
 					okIA = false;
 					A1.addaShip(cruiserIA);
 					A1.addCoordinate(cruiserIA);
-					// System.out.println("cruiser ok !");
 				}
 			}
 
@@ -699,7 +674,6 @@ public class Main {
 					okIA = false;
 					A1.addaShip(battleShipIA);
 					A1.addCoordinate(battleShipIA);
-					// System.out.println("battleship ok !");
 				}
 			}
 
@@ -718,11 +692,10 @@ public class Main {
 					A2.addCoordinate(destroyerIA);
 					A2.addaShip(destroyerIA);
 					okIA2 = false;
-					// destroyerIA.showList();
-					// System.out.println("destroyer ok !");
-				}
+					
 
 			}
+		}
 
 			okIA2 = true;
 			while (okIA2) {
@@ -733,7 +706,6 @@ public class Main {
 					okIA2 = false;
 					A2.addaShip(carrierIA);
 					A2.addCoordinate(carrierIA);
-					// System.out.println("carrier ok !");
 				}
 			}
 
@@ -747,7 +719,6 @@ public class Main {
 					A2.addaShip(submarineIA);
 					A2.addCoordinate(submarineIA);
 
-					// System.out.println("submarine ok !");
 				}
 			}
 
@@ -759,7 +730,6 @@ public class Main {
 					okIA2 = false;
 					A2.addaShip(cruiserIA);
 					A2.addCoordinate(cruiserIA);
-					// System.out.println("cruiser ok !");
 				}
 			}
 
@@ -771,7 +741,6 @@ public class Main {
 					okIA2 = false;
 					A2.addaShip(battleShipIA);
 					A2.addCoordinate(battleShipIA);
-					// System.out.println("battleship ok !");
 				}
 			}
 
@@ -791,11 +760,8 @@ public class Main {
 				while (ok) {
 					// beging with A2
 
-					// System.out.println(A2.showMeMyShot());
 
 					Coordinate shot = A2.chooseWhereHit();
-					// System.out.println("the second AI choose to shoot at X = "+shot.getX()+" , Y=
-					// "+shot.getY());
 					if (A2.canHit(shot) == false) {
 						System.out.println("Bad luck you already shoot here " + A2.getName());
 					}
@@ -804,11 +770,9 @@ public class Main {
 						// shoot
 
 						for (Ship s : A1.getlistShip()) {
-							// System.out.println("la fonction aShipisHit" +s.getSize()+s.aShipisHit(shot));
 							if (s.aShipisHit(shot)) {
 								A2.addCoordListHits(shot);
 								System.out.println("touched!\n");
-								// System.out.print(A2.showMeMyShot());
 								if (s.destroyed()) {
 									System.out.println("you succely flow a ship!");
 								}
@@ -817,7 +781,6 @@ public class Main {
 
 						if (A1.isHit(shot) == false) {
 							A2.addCoordListMiss(shot);
-							// System.out.print(A2.showMeMyShot());
 							System.out.println("miss!");
 						}
 						ok = false;
@@ -851,7 +814,6 @@ public class Main {
 								if (s.aShipisHit(shot2)) {
 									A1.addCoordListHits(shot2);
 									System.out.println("touched !");
-									// System.out.println(A1.showMeMyShot());
 
 									if (s.destroyed()) {
 										System.out.println("you succely flow a ship!");
@@ -861,7 +823,6 @@ public class Main {
 							if (A2.isHit(shot2) == false) {
 								A1.addCoordListMiss(shot2);
 								System.out.println("missed!");
-								// System.out.println(A1.showMeMyShot());
 
 							}
 
